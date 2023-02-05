@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(200, 194, 194);
+}
+h1 {
+  position: relative;
+  right: 25px;
+  margin: 40px 35%;
+}
+
+header {
+  background-color: rgb(6, 200, 87);
+}
+
+#title {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  top: 15px;
+  left: 25px;
+}
+
+#mkThread {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+#thTitle {
+  position: relative;
+  top: 50px;
+  right: 25px;
+  width: 30%;
+  height: 30%;
+  margin: 40px 35%;
+}
+#thTitle input[type="text"] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  border: 1px solid #ffffff;
+  box-shadow: 1px 1px 2px 0 #707070 inset;
+  border-radius: 4px;
+}
+
+#rtTop {
+  position: absolute;
+  top: 385px;
+  left: 510px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 10px 10px 10px 10px 10px 10px 10px 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.title {
+  background-color: white;
+  border: solid 2px black;
+  grid-row: 1/6;
+}
+
+.t1 {
+  height: 75px;
+}
+
+.Button {
+  border-radius: 3px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 150px;
+  right: 50px;
+  max-width: 220px;
+  padding: 10px 25px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  background: rgb(149, 202, 252);
+  background: rgb(6, 200, 87);
+}
+
+.Button:hover {
+  background: rgb(6, 200, 255);
+}
