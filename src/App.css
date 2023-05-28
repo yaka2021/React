@@ -9,12 +9,13 @@ h1 {
 
 header {
   background-color: rgb(6, 200, 87);
+  height: 75px;
 }
 
 #title {
   color: white;
   font-size: 30px;
-  position: relative;
+  position: absolute;
   top: 15px;
   left: 25px;
 }
@@ -35,7 +36,28 @@ header {
   height: 30%;
   margin: 40px 35%;
 }
+
 #thTitle input[type="text"] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  border: 1px solid #ffffff;
+  box-shadow: 1px 1px 2px 0 #707070 inset;
+  border-radius: 4px;
+}
+
+.mess {
+  position: relative;
+  left: 475px;
+  width: 30%;
+  height: 30%;
+  margin: 40px 35%;
+}
+
+.mess input[type="text"] {
   font: 15px/24px sans-serif;
   box-sizing: border-box;
   width: 100%;
@@ -55,7 +77,7 @@ header {
 
 .container {
   display: grid;
-  grid-template-rows: 10px 10px 10px 10px 10px 10px 10px 10px;
+  grid-template-rows: 10px 5px 5px 5px 5px 5px 5px 5px 5px 5px;
   text-align: center;
   font-size: 25px;
 }
@@ -63,11 +85,32 @@ header {
 .title {
   background-color: white;
   border: solid 2px black;
-  grid-row: 1/6;
+  grid-row: 1/9;
+  margin: 0px 200px;
+}
+
+.reply {
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px;
+  font-size: 25px;
+  bottom: 175px;
+  right: 305px;
+  margin: 10px 350px;
+}
+
+.in {
+  background-color: white;
+  border: solid 2px black;
+  grid-row: 1/5;
 }
 
 .t1 {
   height: 75px;
+}
+
+.t2 {
+  height: 150px;
 }
 
 .Button {
@@ -77,9 +120,26 @@ header {
   justify-content: space-around;
   align-items: center;
   top: 150px;
-  right: 50px;
+  right: 30px;
   max-width: 220px;
-  padding: 10px 25px;
+  padding: 10px 50px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  background: rgb(149, 202, 252);
+  background: rgb(6, 200, 87);
+}
+
+.Button2 {
+  border-radius: 3px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 200px;
+  left: 125px;
+  max-width: 220px;
+  padding: 10px 85px;
   color: #fff;
   transition: 0.3s ease-in-out;
   font-weight: 600;
@@ -88,5 +148,9 @@ header {
 }
 
 .Button:hover {
+  background: rgb(6, 200, 255);
+}
+
+.Button2:hover {
   background: rgb(6, 200, 255);
 }
